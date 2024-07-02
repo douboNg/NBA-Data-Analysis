@@ -1,0 +1,1936 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SSAS_NBA</ID>
+  <Name>SSAS_NBA</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Dimensions>
+    <Dimension>
+      <ID>Dim Game</ID>
+      <Name>Dim Game</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1906" scrolltop="-3768" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7049" y="11282" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGame" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3196" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00007c0c0000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimGame" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-1906</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3768</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Game Key</ID>
+          <Name>Game Key</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>gameKey</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Game Id</AttributeID>
+              <Name>Game Id</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>1st Team</AttributeID>
+              <Name>1st Team</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>2nd Team</AttributeID>
+              <Name>2nd Team</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>1st Team Point</AttributeID>
+              <Name>1st Team Point</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>2nd Team Point</AttributeID>
+              <Name>2nd Team Point</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Duration</AttributeID>
+              <Name>Duration</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Season</AttributeID>
+              <Name>Season</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Game Id</ID>
+          <Name>Game Id</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>gameId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>1st Team</ID>
+          <Name>1st Team</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>_1stTeam</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>2nd Team</ID>
+          <Name>2nd Team</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>_2ndTeam</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>1st Team Point</ID>
+          <Name>1st Team Point</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>_1stTeamPoint</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>2nd Team Point</ID>
+          <Name>2nd Team Point</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>_2ndTeamPoint</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Duration</ID>
+          <Name>Duration</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>duration</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Season</ID>
+          <Name>Season</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGame</TableID>
+                <ColumnID>season</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Time</ID>
+      <Name>Dim Time</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2004" scrolltop="-4308" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7049" y="11282" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTime" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimTime" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2004</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-4308</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+          <Value>
+            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+              <Shapes NodeWidth="119">
+                <Shape Id="Time Key" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Time Key" />
+                    <Attribute Id="Game Id" />
+                  </Attributes>
+                  <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Year" />
+                  </Attributes>
+                  <Position x="173" y="20" />
+                </Shape>
+                <Shape Id="Month" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Month" />
+                  </Attributes>
+                  <Position x="173" y="69" />
+                </Shape>
+                <Shape Id="Day" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Day" />
+                  </Attributes>
+                  <Position x="173" y="118" />
+                </Shape>
+              </Shapes>
+            </DiagramLayout>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Time Key</ID>
+          <Name>Time Key</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>timeKey</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Game Id</AttributeID>
+              <Name>Game Id</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Day</AttributeID>
+              <Name>Day</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Month</AttributeID>
+              <Name>Month</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Game Id</ID>
+          <Name>Game Id</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>gameId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day</ID>
+          <Name>Day</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>day</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>month</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>day</ColumnID>
+            </Source>
+          </NameColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>month</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>month</ColumnID>
+            </Source>
+          </NameColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTime</TableID>
+                <ColumnID>year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <ID>Hierarchy</ID>
+          <Name>Hierarchy</Name>
+          <Levels>
+            <Level>
+              <ID>Day</ID>
+              <Name>Day</Name>
+              <SourceAttributeID>Day</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Month</ID>
+              <Name>Month</Name>
+              <SourceAttributeID>Month</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Year</ID>
+              <Name>Year</Name>
+              <SourceAttributeID>Year</SourceAttributeID>
+            </Level>
+          </Levels>
+        </Hierarchy>
+      </Hierarchies>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Game Type</ID>
+      <Name>Dim Game Type</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2001" scrolltop="-4847" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7049" y="11282" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGameType" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3006" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000be0b000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimGameType" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2001</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-4847</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Game Type Key</ID>
+          <Name>Game Type Key</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGameType</TableID>
+                <ColumnID>gameTypeKey</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Type Name</AttributeID>
+              <Name>Type Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Type Name</ID>
+          <Name>Type Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimGameType</TableID>
+                <ColumnID>typeName</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Team</ID>
+      <Name>Dim Team</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2004" scrolltop="-4668" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7049" y="11282" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTeam" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimTeam" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2004</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-4668</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Team Key</ID>
+          <Name>Team Key</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTeam</TableID>
+                <ColumnID>teamKey</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Team Id</AttributeID>
+              <Name>Team Id</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Team Name</AttributeID>
+              <Name>Team Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Team Id</ID>
+          <Name>Team Id</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTeam</TableID>
+                <ColumnID>teamId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Team Name</ID>
+          <Name>Team Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimTeam</TableID>
+                <ColumnID>teamName</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+  </Dimensions>
+  <Cubes>
+    <Cube>
+      <ID>NBA Stats DW</ID>
+      <Name>NBA Stats DW</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1312" scrolltop="-2211" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="25337" y="11282" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGameType" left="10826" top="6773" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="3006" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000be0b000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimGameType" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTeam" left="20" top="6593" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimTeam" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactGameStats" left="5420" top="5067" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3006" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000be0b000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_FactGameStats" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTime" left="5423" top="0" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimTime" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGame" left="5325" top="12467" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="3196" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00007c0c0000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimGame" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8126" top="7168" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fk_dimGameType]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="12" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="10826" y="7567" />
+                  <point x="8426" y="7567" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="7167" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fk_dimTeam]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="3020" y="7566" />
+                  <point x="4220" y="7566" />
+                  <point x="4220" y="7567" />
+                  <point x="5420" y="7567" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6524" top="2168" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fk_dimTime]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6923" y="2667" />
+                  <point x="6923" y="5067" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6524" top="9767" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fk_dimGame]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6923" y="12467" />
+                  <point x="6923" y="10067" />
+                </connector>
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-1312</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-2211</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>75</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Dimensions>
+        <Dimension>
+          <ID>Dim Game</ID>
+          <Name>Dim Game</Name>
+          <DimensionID>Dim Game</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Game Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Game Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>1st Team</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>2nd Team</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>1st Team Point</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>2nd Team Point</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Duration</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Season</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Time</ID>
+          <Name>Dim Time</Name>
+          <DimensionID>Dim Time</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Time Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Game Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Game Type</ID>
+          <Name>Dim Game Type</Name>
+          <DimensionID>Dim Game Type</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Game Type Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Type Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Team</ID>
+          <Name>Dim Team</Name>
+          <DimensionID>Dim Team</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Team Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Team Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Team Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup>
+          <ID>Dim Game</ID>
+          <Name>Dim Game</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Game Id</ID>
+              <Name>Game Id</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimGame</TableID>
+                  <ColumnID>gameId</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>1st Team Point</ID>
+              <Name>1st Team Point</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimGame</TableID>
+                  <ColumnID>_1stTeamPoint</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>2nd Team Point</ID>
+              <Name>2nd Team Point</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimGame</TableID>
+                  <ColumnID>_2ndTeamPoint</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Duration</ID>
+              <Name>Duration</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimGame</TableID>
+                  <ColumnID>duration</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Season</ID>
+              <Name>Season</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimGame</TableID>
+                  <ColumnID>season</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Dim Game Count</ID>
+              <Name>Dim Game Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_DimGame</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="DegenerateMeasureGroupDimension">
+              <CubeDimensionID>Dim Game</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Game Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_DimGame</TableID>
+                        <ColumnID>gameKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Dim Game</ID>
+              <Name>Dim Game</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+                <TableID>dbo_DimGame</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+        <MeasureGroup>
+          <ID>Dim Time</ID>
+          <Name>Dim Time</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Game Id - Dim Time</ID>
+              <Name>Game Id - Dim Time</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimTime</TableID>
+                  <ColumnID>gameId</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Day</ID>
+              <Name>Day</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimTime</TableID>
+                  <ColumnID>day</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Month</ID>
+              <Name>Month</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimTime</TableID>
+                  <ColumnID>month</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Year</ID>
+              <Name>Year</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_DimTime</TableID>
+                  <ColumnID>year</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Dim Time Count</ID>
+              <Name>Dim Time Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_DimTime</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="DegenerateMeasureGroupDimension">
+              <CubeDimensionID>Dim Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_DimTime</TableID>
+                        <ColumnID>timeKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Dim Time</ID>
+              <Name>Dim Time</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+                <TableID>dbo_DimTime</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+        <MeasureGroup>
+          <ID>Fact Game Stats</ID>
+          <Name>Fact Game Stats</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Fgm</ID>
+              <Name>Fgm</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>fgm</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Fga</ID>
+              <Name>Fga</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>fga</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>3pm</ID>
+              <Name>3pm</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>_3pm</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>3pa</ID>
+              <Name>3pa</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>_3pa</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Ftm</ID>
+              <Name>Ftm</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>ftm</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Fta</ID>
+              <Name>Fta</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>fta</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Oreb</ID>
+              <Name>Oreb</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>oreb</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Dreb</ID>
+              <Name>Dreb</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>dreb</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Reb</ID>
+              <Name>Reb</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>reb</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Tov</ID>
+              <Name>Tov</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>tov</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Stl</ID>
+              <Name>Stl</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>stl</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Blk</ID>
+              <Name>Blk</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>blk</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Pf</ID>
+              <Name>Pf</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>pf</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Fact Game Stats Count</ID>
+              <Name>Fact Game Stats Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Pf - Fact Game Stats</ID>
+              <Name>MaxFoul</Name>
+              <AggregateFunction>Max</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactGameStats</TableID>
+                  <ColumnID>pf</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Game Type</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Game Type Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_FactGameStats</TableID>
+                        <ColumnID>gameTypeKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_FactGameStats</TableID>
+                        <ColumnID>timeKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Team</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Team Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_FactGameStats</TableID>
+                        <ColumnID>teamKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Game</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Game Key</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_FactGameStats</TableID>
+                        <ColumnID>gameKey</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Fact Game Stats</ID>
+              <Name>Fact Game Stats</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+                <TableID>dbo_FactGameStats</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Source>
+        <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+      </Source>
+      <MdxScripts>
+        <MdxScript>
+          <ID>MdxScript</ID>
+          <Name>MdxScript</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Commands>
+            <Command>
+              <Text>CREATE DYNAMIC SET CURRENTCUBE.[Top 5 Teams by Number of Games]
+ AS HEAD(
+        ORDER(
+            [Dim Team].[team Name].[team Name].MEMBERS,
+            [Measures].[Number of Games],
+            DESC
+        ),
+        5
+    ); 
+</Text>
+            </Command>
+          </Commands>
+        </MdxScript>
+      </MdxScripts>
+    </Cube>
+  </Cubes>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>NBA Stats DW</ID>
+      <Name>NBA Stats DW</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=OCEAN\MSSQLSERVER01;Integrated Security=SSPI;Initial Catalog=NBAStatsDW</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+        <Account>OCEAN\duong</Account>
+        <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>NBA Stats DW</ID>
+      <Name>NBA Stats DW</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout>
+                  <dds>
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5054" scrolltop="22" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="25929" y="12573" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                      <font>
+                        <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                      </font>
+                      <mouseicon>
+                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                      </mouseicon>
+                    </diagram>
+                    <layoutmanager>
+                      <ddsxmlobj />
+                    </layoutmanager>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGame" left="5325" top="12467" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3196" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e00007c0c0000a30e0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_DimGame" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGameType" left="10826" top="6773" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3006" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000be0b000034060000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_DimGameType" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTeam" left="20" top="6593" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_DimTeam" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTime" left="5423" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_DimTime" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactGameStats" left="5420" top="5067" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3006" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000be0b000088130000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_FactGameStats" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8126" top="7168" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fk_dimGameType]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="12" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="10826" y="7567" />
+                        <point x="8426" y="7567" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6524" top="2168" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fk_dimTime]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="6923" y="2667" />
+                        <point x="6923" y="5067" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="7167" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fk_dimTeam]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="3020" y="7566" />
+                        <point x="4220" y="7566" />
+                        <point x="4220" y="7567" />
+                        <point x="5420" y="7567" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6524" top="9767" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fk_dimGame]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="6923" y="12467" />
+                        <point x="6923" y="10067" />
+                      </connector>
+                    </ddscontrol>
+                  </dds>
+</DiagramLayout>
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>-5054</DiagramViewPortLeft>
+                <DiagramViewPortTop>22</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>75</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>NBA Stats DW</DataSourceID>
+      <Schema>
+        <xs:schema id="NBA_x0020_Stats_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="NBA_x0020_Stats_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="41ca35a2-f3f7-4866-8631-0d53a5a2fd5f">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_DimGame" msprop:design-time-name="afe1ea7a-df40-443f-8913-b1e15b1c6da3" msprop:FriendlyName="DimGame" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DimGame">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="gameKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="gameKey" msprop:DbColumnName="gameKey" msprop:design-time-name="bcb7f7cf-9ec1-4bad-a332-e81b212385f9" type="xs:int" />
+                      <xs:element name="gameId" msprop:FriendlyName="gameId" msprop:DbColumnName="gameId" msprop:design-time-name="82f0af3f-88a9-4164-bbbe-c1bc19054557" type="xs:double" minOccurs="0" />
+                      <xs:element name="_1stTeam" msprop:FriendlyName="_1stTeam" msprop:DbColumnName="_1stTeam" msprop:design-time-name="2c307a58-fe5e-4ff1-aa91-84c6cddf3c80" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="_2ndTeam" msprop:FriendlyName="_2ndTeam" msprop:DbColumnName="_2ndTeam" msprop:design-time-name="acb27127-81fd-4215-9dae-70c8a4e35b7d" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="_1stTeamPoint" msprop:FriendlyName="_1stTeamPoint" msprop:DbColumnName="_1stTeamPoint" msprop:design-time-name="d805fa34-13fb-4ece-bee7-5edd483f678a" type="xs:int" minOccurs="0" />
+                      <xs:element name="_2ndTeamPoint" msprop:FriendlyName="_2ndTeamPoint" msprop:DbColumnName="_2ndTeamPoint" msprop:design-time-name="85c7f04b-daeb-4fcf-b8d2-ff2c68dc5801" type="xs:int" minOccurs="0" />
+                      <xs:element name="duration" msprop:FriendlyName="duration" msprop:DbColumnName="duration" msprop:design-time-name="14bd0a3f-edc5-42d7-b7fd-1758cb7b4eac" type="xs:int" minOccurs="0" />
+                      <xs:element name="season" msprop:FriendlyName="season" msprop:DbColumnName="season" msprop:design-time-name="38775765-3987-4f97-8aaa-7297838a87b0" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_DimGameType" msprop:design-time-name="c0ec79f3-60e6-475b-a71f-dd7796867dfd" msprop:FriendlyName="DimGameType" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DimGameType">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="gameTypeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="gameTypeKey" msprop:DbColumnName="gameTypeKey" msprop:design-time-name="ba28478b-a73e-4f2c-bf3e-efb507a519d9" type="xs:int" />
+                      <xs:element name="typeName" msprop:FriendlyName="typeName" msprop:DbColumnName="typeName" msprop:design-time-name="462e8369-3db8-428b-9656-b483610b0fac" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_DimTeam" msprop:design-time-name="2ca60c7e-f1b5-4388-b0a4-df38938aaafc" msprop:FriendlyName="DimTeam" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DimTeam">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="teamKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="teamKey" msprop:DbColumnName="teamKey" msprop:design-time-name="8f697368-a237-4645-a74f-12e999dd4c0d" type="xs:int" />
+                      <xs:element name="teamId" msprop:FriendlyName="teamId" msprop:DbColumnName="teamId" msprop:design-time-name="045955a0-37af-488b-9354-19f340fab790" type="xs:double" minOccurs="0" />
+                      <xs:element name="teamName" msprop:FriendlyName="teamName" msprop:DbColumnName="teamName" msprop:design-time-name="7a6fafe1-3676-48cc-9002-89ec39b3d136" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_DimTime" msprop:design-time-name="acb913f6-224f-4f31-a54c-a802745c895c" msprop:FriendlyName="DimTime" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DimTime">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="timeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="timeKey" msprop:DbColumnName="timeKey" msprop:design-time-name="18f8ed48-e364-4250-9fc6-355cb875a9f9" type="xs:int" />
+                      <xs:element name="gameId" msprop:FriendlyName="gameId" msprop:DbColumnName="gameId" msprop:design-time-name="9b6ac77b-50d8-4757-bf2d-5aef0f330942" type="xs:double" minOccurs="0" />
+                      <xs:element name="day" msprop:FriendlyName="day" msprop:DbColumnName="day" msprop:design-time-name="fa3d025a-6e89-42ad-8eec-2ba32c6bdfe1" type="xs:int" minOccurs="0" />
+                      <xs:element name="month" msprop:FriendlyName="month" msprop:DbColumnName="month" msprop:design-time-name="63be3b33-0dbb-4603-8409-fd54f39bf59a" type="xs:int" minOccurs="0" />
+                      <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="741fd75f-e479-4319-9d20-10f0c719472b" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_FactGameStats" msprop:design-time-name="83e13baf-1003-431e-ac2c-a0196453d577" msprop:FriendlyName="FactGameStats" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="FactGameStats">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="statsId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="statsId" msprop:DbColumnName="statsId" msprop:design-time-name="bb75abc5-f126-410e-8827-5d9475e6a160" type="xs:int" />
+                      <xs:element name="gameKey" msprop:FriendlyName="gameKey" msprop:DbColumnName="gameKey" msprop:design-time-name="b8bf8c58-f3b8-4dfc-b8e2-39d24449fe8b" type="xs:int" minOccurs="0" />
+                      <xs:element name="gameTypeKey" msprop:FriendlyName="gameTypeKey" msprop:DbColumnName="gameTypeKey" msprop:design-time-name="f662479a-8f26-41fc-be15-a2b2c900be41" type="xs:int" minOccurs="0" />
+                      <xs:element name="teamKey" msprop:FriendlyName="teamKey" msprop:DbColumnName="teamKey" msprop:design-time-name="595344d7-cf83-47a6-adfd-31b35da90a12" type="xs:int" minOccurs="0" />
+                      <xs:element name="timeKey" msprop:FriendlyName="timeKey" msprop:DbColumnName="timeKey" msprop:design-time-name="ade46533-ea7c-400d-9fbd-65ffc7df3248" type="xs:int" minOccurs="0" />
+                      <xs:element name="fgm" msprop:FriendlyName="fgm" msprop:DbColumnName="fgm" msprop:design-time-name="c1f7855c-8742-4938-b30d-708f9b0951e2" type="xs:int" minOccurs="0" />
+                      <xs:element name="fga" msprop:FriendlyName="fga" msprop:DbColumnName="fga" msprop:design-time-name="00435de0-aa67-4f26-bc9b-420429758a2a" type="xs:int" minOccurs="0" />
+                      <xs:element name="_3pm" msprop:FriendlyName="_3pm" msprop:DbColumnName="_3pm" msprop:design-time-name="6689482d-b13f-4571-9085-2751a5f61d71" type="xs:int" minOccurs="0" />
+                      <xs:element name="_3pa" msprop:FriendlyName="_3pa" msprop:DbColumnName="_3pa" msprop:design-time-name="0669ff0a-fa29-415f-affc-dd5d48f4245e" type="xs:int" minOccurs="0" />
+                      <xs:element name="ftm" msprop:FriendlyName="ftm" msprop:DbColumnName="ftm" msprop:design-time-name="759548d7-67af-40a9-a13b-53864dc96eee" type="xs:int" minOccurs="0" />
+                      <xs:element name="fta" msprop:FriendlyName="fta" msprop:DbColumnName="fta" msprop:design-time-name="f85e43fb-f19e-4507-8aea-2b4ca1b7a4b1" type="xs:int" minOccurs="0" />
+                      <xs:element name="oreb" msprop:FriendlyName="oreb" msprop:DbColumnName="oreb" msprop:design-time-name="9ac16295-ae60-4258-be34-d9eb2cdb8f44" type="xs:int" minOccurs="0" />
+                      <xs:element name="dreb" msprop:FriendlyName="dreb" msprop:DbColumnName="dreb" msprop:design-time-name="f6ffe9c9-6542-465d-b243-78b2042dcfe4" type="xs:int" minOccurs="0" />
+                      <xs:element name="reb" msprop:FriendlyName="reb" msprop:DbColumnName="reb" msprop:design-time-name="c342f1fa-1d92-40f6-950f-a3ee924a7f2a" type="xs:int" minOccurs="0" />
+                      <xs:element name="tov" msprop:FriendlyName="tov" msprop:DbColumnName="tov" msprop:design-time-name="906cf36b-e3ff-4b02-9b6c-a68078f66d1f" type="xs:int" minOccurs="0" />
+                      <xs:element name="stl" msprop:FriendlyName="stl" msprop:DbColumnName="stl" msprop:design-time-name="66b02676-7695-4b4a-b3b9-1033bd3c4aa7" type="xs:int" minOccurs="0" />
+                      <xs:element name="blk" msprop:FriendlyName="blk" msprop:DbColumnName="blk" msprop:design-time-name="602a502e-0c2f-4ad8-b3ee-34ee514c439f" type="xs:int" minOccurs="0" />
+                      <xs:element name="pf" msprop:FriendlyName="pf" msprop:DbColumnName="pf" msprop:design-time-name="9227d2ca-c422-4a6e-81dc-2f32872e844a" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_DimGame" />
+              <xs:field xpath="gameKey" />
+            </xs:unique>
+            <xs:unique name="dbo_DimGameType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_DimGameType" />
+              <xs:field xpath="gameTypeKey" />
+            </xs:unique>
+            <xs:unique name="dbo_DimTeam_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_DimTeam" />
+              <xs:field xpath="teamKey" />
+            </xs:unique>
+            <xs:unique name="dbo_DimTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_DimTime" />
+              <xs:field xpath="timeKey" />
+            </xs:unique>
+            <xs:unique name="dbo_FactGameStats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_FactGameStats" />
+              <xs:field xpath="statsId" />
+            </xs:unique>
+            <xs:keyref name="fk_dimGame" refer="Constraint1">
+              <xs:selector xpath=".//dbo_FactGameStats" />
+              <xs:field xpath="gameKey" />
+            </xs:keyref>
+            <xs:keyref name="fk_dimTeam" refer="dbo_DimTeam_Constraint1">
+              <xs:selector xpath=".//dbo_FactGameStats" />
+              <xs:field xpath="teamKey" />
+            </xs:keyref>
+            <xs:keyref name="fk_dimTime" refer="dbo_DimTime_Constraint1">
+              <xs:selector xpath=".//dbo_FactGameStats" />
+              <xs:field xpath="timeKey" />
+            </xs:keyref>
+            <xs:keyref name="fk_dimGameType" refer="dbo_DimGameType_Constraint1">
+              <xs:selector xpath=".//dbo_FactGameStats" />
+              <xs:field xpath="gameTypeKey" />
+            </xs:keyref>
+          </xs:element>
+        </xs:schema>
+        <NBA_x0020_Stats_x0020_DW xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>

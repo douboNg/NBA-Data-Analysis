@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="327dca9a-a732-40f8-ae02-58c98b572286" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NBA Stats DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Game Stats</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0df257cb-13ef-4e08-ab0f-2f527ca029c7">
+          <ID>Fact Game Stats</ID>
+          <Name>Fact Game Stats</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b47152c2-5ad9-41ba-b76a-d260ff28c6d8">
+            <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+            <TableID>dbo_FactGameStats</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Game</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fa47e355-3654-4fe1-992b-25e08a61a38a">
+          <ID>Dim Game</ID>
+          <Name>Dim Game</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9bda0279-d36a-41e6-ac77-c90bb201e44d">
+            <DataSourceViewID>NBA Stats DW</DataSourceViewID>
+            <TableID>dbo_DimGame</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
