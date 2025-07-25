@@ -2,8 +2,6 @@
 
 This project presents an **OLAP (Online Analytical Processing)** solution designed to analyze NBA performance data using a **Data Warehouse architecture**. It supports **multidimensional analysis** through OLAP Cubes and provides dynamic visualizations using **Excel** and **Power BI**.
 
-> 💡 Solo project developed to explore end-to-end data warehousing and OLAP capabilities using Microsoft BI stack.
-
 ---
 
 ## 📌 Objectives
@@ -13,6 +11,18 @@ This project presents an **OLAP (Online Analytical Processing)** solution design
 - Write **MDX queries** to explore player and team performance.
 - Create interactive reports for business-style insights using **Power BI** and **Excel**.
 - Enable operations such as **Roll-up**, **Drill-down**, **Slice**, **Dice**, and **Pivot**.
+
+---
+
+## Some images of the project
+### Data Intergration Flow with SSIS
+![alt text](https://github.com/douboNg/NBA-Data-Analysis/blob/main/Image/Data%20Intergration%20using%20SSIS.png)
+
+### Fact table loading
+![alt text](https://github.com/douboNg/NBA-Data-Analysis/blob/main/Image/Process%20to%20create%20a%20Fact%20Table%20(A%20table%20contains%20all%20statistic%20metric%20and%20data%20related%20to%20the%20match).png)
+
+### Data Modeling with SSAS (Cube and 4 Dimensions)
+![alt text](https://github.com/douboNg/NBA-Data-Analysis/blob/main/Image/Data%20modeling%20using%20SSAS%20to%20create%20an%20OLAP%20Cube%20with%204%20Dimensions%20to%20support%20fast%20analytical%20queries..png)
 
 ---
 
@@ -35,15 +45,6 @@ This project presents an **OLAP (Online Analytical Processing)** solution design
 - **OLAP Cubes**: Configured for player stats, team performance, seasons, and match types.
 - **MDX Queries**: Used to perform trend analysis, comparisons, and performance breakdowns.
 - **Reports**: Created dashboards with filters, charts, and pivot tables in Power BI & Excel.
-
----
-
-## 📈 Sample Questions Answered
-
-- Who are the top-performing players across multiple seasons?
-- How do teams perform in home vs. away games?
-- What trends exist in player scoring over time?
-- Which player positions contribute most to wins?
 
 ---
 
